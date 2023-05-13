@@ -4,6 +4,8 @@ body {
   padding: 0;
   font-family: "Rubik";
   background-color: #eef0f4;
+  color: #432000;
+  user-select: none;
 }
 
 input {
@@ -15,6 +17,7 @@ input {
   text-align: center;
   margin-top: 10px;
   font-family: "Rubik";
+  font-size: 18px;
 }
 
 button {
@@ -24,6 +27,11 @@ button {
   padding: 15px;
   border-radius: 8px;
   margin-top: 10px;
+  font-size: 20px;
+}
+button:hover {
+  background-color: #432000;
+  cursor: pointer;
 }
 
 .container {
@@ -36,4 +44,30 @@ button {
 img {
   width: 150px;
   margin: 0 auto;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  font-family: "Rubik";
+  padding: 0;
+}
+
+ul li {
+  background-color: #fffdf8;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  flex-grow: 1;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+li:hover {
+  background-color: #ffecc7;
+  cursor: pointer;
 }
